@@ -22,6 +22,6 @@ spec:
     spec:
       containers:
         - name: worker-container
-          image: kodekloud/examplevotingapp_worker
+          image: kodekloud/examplevotingapp_worker:v1
   replicas: 1
     
