@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: redis-pod
   labels: 
-    app: vp
+    app: va
     type: db-redis
   
 spec:
