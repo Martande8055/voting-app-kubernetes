@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: postgres-deplo
   labels:
-      app: vp
+      app: va
       type: db-postgres
 spec:
   selector:
