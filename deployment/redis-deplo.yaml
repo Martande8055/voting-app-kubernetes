@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: redis-deplo
   labels:
-      app: vp
+      app: va
       type: db-redis
 spec:
   selector:
@@ -14,7 +14,7 @@ spec:
     metadata:
       name: redis-pod
       labels: 
-        app: vp
+        app: va
         type: db-redis
       
     spec:
