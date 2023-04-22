@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vote-page-deplo
+  labels:
+    app: va 
+    type: FE-vote
+spec:
+  selector:
+    matchLabels:
+      type: FE-vote
+    
+  template:
+    metadata: 
+      name: vp-pod
+      labels:
+        app: va
+        type: FE-vote
+    spec:
+      containers:
+        - name: vp-container
+          image: kodekloud/examplevotingapp_vote:v1
+          ports: 
+            - containerPort: 80 
+  replicas: 1
+    

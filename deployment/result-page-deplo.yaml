@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: result-page-deplo
+  labels:
+    app: va 
+    type: FE-result
+spec:
+  selector:
+    matchLabels:
+      type: FE-result
+    
+  template:
+    metadata: 
+      name: result-pod
+      labels:
+        app: va 
+        type: FE-result
+    spec:
+      containers:
+        - name: result-continer
+          image: kodekloud/examplevotingapp_result:v1
+          ports:
+            - containerPort: 80
+  replicas: 1
+    

@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: vp-pod
+  labels:
+    app: va
+    type: FE-vote
+spec:
+  containers:
+    - name: vp-container
+      image: kodekloud/examplevotingapp_vote:v1
+      ports: 
+        - containerPort: 80 
+
+
+
+
+    

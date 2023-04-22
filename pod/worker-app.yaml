@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: worker-pod
+  labels:
+    app: va
+    type: BE-worker
+
+spec:
+  containers:
+    - name: worker-container
+      image: kodekloud/examplevotingapp_worker
+      
